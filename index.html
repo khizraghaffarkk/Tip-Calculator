@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png" />
+    <link rel="stylesheet" href="tipcalculator.css">
+    <title>Rating Page</title>
+</head>
+<body>
+    <!--SPLITTER Logo-->
+     <div class="splitter-logo"><img src="logo.svg" alt="" srcset=""></div>
+     <div class="calculate-tip">
+        <div class="card1">
+            <label for="">Bill</label>
+            <input type="number" class="bill-input-tag" id="bill-input-tag">
+            <label for="">Select Tip %</label>
+            <div class="tip">
+                <div class="tipdi tip-5">5%</div>
+                <div class="tipdi tip-10%">10%</div>
+                <div class="tipdi tip-15% active-tipdi">15%</div>
+                <div class="tipdi tip--25%">25%</div>
+                <div class="tipdi tip-50%">50%</div>
+                <div class="tipdi-custom"><input type="number" class="tip-custom-input" 
+                     placeholder="Custom"></div>
+            </div>
+            <div class="people-logo">
+                <label for="">Number of People</label>
+                <label for="" id="cannot-be-zero">Can't be Zero</label>
+            </div>
+            <input type="number" id="number-of-people-input-tag" class="number-of-people-input-tag">
+        </div>
+        <!--Card1 Completed Here-->
+        <!--Card2 Starts Here-->
+        <div class="output">
+            <!--first column of tip amount/person-->
+            <div class="tip-amount">
+                <div class="calculated-tip-amount">
+                    <p class="t">Tip Amount</p>
+                    <p class="person">/person</p>
+                </div>
+                <div class="amount" id="tip-amount">$4.27</div>
+            </div>
+
+            <!--second column of total/person-->
+            <div class="total-amount">
+                <div class="calculated-total-amount">
+                    <p class="t">Total</p>
+                    <p class="person">/person</p>
+                </div>
+                <div class="amount" id="total-amount">$32.79</div>
+            </div>
+            <div class="reset">RESET</div>
+
+        </div>
+        <!--Card2 Completed Here-->
+
+     </div>
+
+     <script src="tipcalculator.js"></script>
+</body>
+</html>
